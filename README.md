@@ -24,6 +24,6 @@ This guide assumes:
 
 Great, now that we've covered all the prerequisites, let's get to the good stuff
 
-- Get started with [Calabash](calabash/README.md)
+- Get started with [Calabash](calabash/)
 - Get started with [UITest](uitest/README.md)
 - Get started with [Appium](appium/README.md)
