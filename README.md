@@ -14,11 +14,11 @@ Also, I targeted this particular documents at Mac OS X based build hosts, since 
 
 This guide assumes:
 
-1. An installed and configured Jenkins environment.
-2. You have installed the [Parameterized Build](https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Build) Jenkins Plugin.
-2. You have already configured your automated builds of your app, and have access to all of the necessary artifacts to submit a job in Xamarin Test Cloud (i.e. IPA/APK, DYSM, test scripts, etc.).
-2. You have already created a Xamarin Test Cloud Account (you will need an API key).  If you have not, please visit [https://xamarin.com/testcloud](https://xamarin.com/testcloud) to start a trial.
-3. You can manually submit a job to Xamarin Test Cloud through `terminal` on the build agent (more on in this in the Framework specific guides).
+- [x] An installed and configured Jenkins environment.
+- [x] You have installed the [Parameterized Build](https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Build) Jenkins Plugin.
+- [x] You have already configured your automated builds of your app, and have access to all of the necessary artifacts to submit a job in Xamarin Test Cloud (i.e. IPA/APK, DYSM, test scripts, etc.).
+- [x] You have already created a Xamarin Test Cloud Account (you will need an API key).  If you have not, please visit [https://xamarin.com/testcloud](https://xamarin.com/testcloud) to start a trial.
+- [x] You can manually submit a job to Xamarin Test Cloud through `terminal` on the build agent (more on in this in the Framework specific guides).
 
 ### Let's get Started!!!
 
