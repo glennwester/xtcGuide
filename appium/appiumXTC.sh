@@ -1,2 +1,2 @@
-#calabashXTC.sh
+#appiumXTC.sh
 #TODO script here

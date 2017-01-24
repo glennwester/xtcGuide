@@ -1,2 +1,2 @@
-#calabashXTC.sh
+#uitestXTC.sh
 #TODO script here
