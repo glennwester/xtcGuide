@@ -33,7 +33,7 @@ This script requires several parameters to be passed from your build.  In this e
 
 Step 1: Add a new Build Step to your build
 
-![](https://github.com/glennwester/xtcGuide/blob/master/uitest/img/globalPath.png?raw=true)
+![](https://github.com/glennwester/xtcGuide/blob/master/uitest/img/addBuildStep.png?raw=true)
 
 Step 2:  Configure your Parameters
 
