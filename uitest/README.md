@@ -19,21 +19,37 @@ This script requires several parameters to be passed from your build.  In this e
 
 | Paramenter | Description | Example |
 | --- | --- | --- |
-| `XTC_UPLOADER_PATH` | Path to the Xamarin.UITest NuGet package | packages/Xamarin.UITest.2.0.0/tools/test-cloud.exe |
+| `XTC_UPLOADER_PATH` | Path to the Xamarin.UITest (test-cloud.exe) NuGet package | packages/Xamarin.UITest.2.0.0/tools/test-cloud.exe |
 | `XTC_TEST_DIRECTORY` | Location of the test project dlls | [TEST_PROJECT_NAME]/bin/"$CONFIGURATION" |
-| `XTC_APP_FILE` | Location of your compiled app | path/to/your/app.apk
+| `XTC_APP_FILE` | Location of your compiled app (.IPA for iOS, .APK for Android) | path/to/your/app.apk
 | `XTC_APP_NAME` | The name of your app| 'Xamarin CRM' |
-| `XTC_API_KEY` | The API key for Xamarin Test Cloud | Example | 
+| `XTC_API_KEY` | The API key for Xamarin Test Cloud | 92cdb777d02122870e7b9f834686fc44 | 
 | `XTC_SERIES` | The Name of the test series that you want these test results to be organized in | master | 
 | `XTC_LOCALE` | The Locale that you want your device to be configured as for the duration of the test run | en_US | 
-| `XTC_DEVICE_KEY` | The Device Set Key from Xamarin Test Cloud | Example | 
-| `XTC_USER` | The e-mail address of the user submitting the test | user@domain.com | 
+| `XTC_DEVICE_KEY` | The Device Set Key from Xamarin Test Cloud (these will differ between iOS/Android) | 7c6ca13d | 
+| `XTC_USER` | The e-mail address of the user submitting the test | superAwesomeDev@xamarin.com | 
+###Optional Parameter (iOS-only)
+
+| Paramenter | Description | Example |
+| --- | --- | --- |
+| `XTC_DYSM_PATH` | Path to the generated DSYM file (iOS-only) | /bin/iPhone/Debug/build-iphone9.2-10.2/MyDrivingiOS.app.dSYM |
+
 
 ### Steps to Configure
 
-Step 1: Add a new Build Step to your build
 
-![](https://github.com/glennwester/xtcGuide/blob/master/uitest/img/addBuildStep.png?raw=true)
+#####Add a build step (Execute shell) to your existing (iOS/Android) Jenkins build configuration 
+#####*```uitestXTC.sh``` is slightly different if your build server is running Windows vs OSX, make sure you have the correct one uncommented
+![](img/addBuildStep.png?raw=true)
+
+
+![](img/buildWithParam.png?raw=true)
+
+![](img/choiceParameter.png?raw=true)
+
+![](img/stringParam.png?raw=true)
+
+
 
 Step 2:  Configure your Parameters
 
@@ -41,11 +57,23 @@ Step 2:  Configure your Parameters
 
 > See [Parameter Dictionary](#parameter-dictionary) above for a list of all the parameters, and example values
 
-Step 3: Include the build script
+Step 3: 
 
 ![]("Adding the build script")
 
-Copy/Paste the [uitestXTC.sh](uitestXTC.sh) script
+Copy/Paste the [uitestXTC.sh](uitestXTC.sh) script Copy the contents of the build script that is provided above ```uitestXTC.sh``` shell script
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
