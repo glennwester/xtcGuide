@@ -58,7 +58,7 @@ A String Parameter will have a single static string for a location that we expec
 
 ![](img/addBuildStep.png?raw=true)
 
-#####Step 3. Add shell code to newly created build step
+##### Step 3. Add shell code to newly created build step
 
 Paste the contents of [uitestXTC.sh](uitestXTC.sh) into the edit text box. Please note that [uitestXTC.sh](uitestXTC.sh) is slightly different if your build server is running Windows vs OSX, make sure you uncomment the command for your OS.
 
