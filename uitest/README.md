@@ -39,7 +39,7 @@ This script requires several parameters to be passed from your build.  In this e
 
 ### Steps to Configure
 
-#####Step 1. Check the ```This project is parameterized``` box and set the appropriate parameters
+##### Step 1. Check the ```This project is parameterized``` box and set the appropriate parameters
 
 > See [Parameter Dictionary](#parameter-dictionary) above for a list of all the parameters, and example values
 
@@ -54,7 +54,7 @@ A String Parameter will have a single static string for a location that we expec
 ![](img/stringParam.png?raw=true)
 
 
-#####Step 2. Add a 'Execute shell' build step to your existing (iOS/Android) Jenkins build configuration.
+##### Step 2. Add a 'Execute shell' build step to your existing (iOS/Android) Jenkins build configuration.
 
 ![](img/addBuildStep.png?raw=true)
 
@@ -65,7 +65,7 @@ Paste the contents of [uitestXTC.sh](uitestXTC.sh) into the edit text box. Pleas
 ![](img/macVsWindows.png?raw=true)
 
 
-#####Step 4. Trigger a build manually and verfiy that the app succesfully uploaded to Xamarin Test Cloud
+##### Step 4. Trigger a build manually and verfiy that the app succesfully uploaded to Xamarin Test Cloud
 
 You can validate that this occured succesfully by looking at the Jenkins Log
 
